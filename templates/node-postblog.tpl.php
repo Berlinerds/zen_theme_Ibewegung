@@ -71,6 +71,7 @@
  * @see zen_process()
  */
 ?>
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix">
   <?php print $user_picture; ?>
 
@@ -93,6 +94,7 @@
       <?php if ($terms): ?>
         <div class="terms terms-inline"><?php print $terms; ?></div>
       <?php endif; ?>
+ 	  
     </div>
   <?php endif; ?>
 
@@ -109,3 +111,9 @@
   	print $links; 
   ?>
 </div><!-- /.node -->
+
+<?php if (!$teaser) { ?>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" 
+	        src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-548f054a66ffaaba" async="async"></script>
+<?php } ?>
