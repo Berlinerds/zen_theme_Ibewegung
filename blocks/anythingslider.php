@@ -1,0 +1,1 @@
+<img style="margi-top:10px;" src='/sites/all/themes/zenibewegung/blocks/image-slider.png'/>

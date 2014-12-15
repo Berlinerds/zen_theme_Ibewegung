@@ -1,0 +1,1 @@
+<div class="fb-like-box" data-href="https://www.facebook.com/ibewegung" data-width="300px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="true"></div>

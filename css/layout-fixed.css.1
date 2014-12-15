@@ -1,0 +1,411 @@
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/*
+ * Body
+ */
+body {
+}
+
+#page-wrapper,
+.region-page-closure {
+  /*
+   * If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. See also the ie6.css file
+   * for the necessary IE5/IE6quirks hack to center a div.
+   */
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+#page {
+}
+
+/*
+ * Header
+ */
+#header {
+}
+
+#header .section {
+}
+
+#search-box {
+}
+
+.region-header {
+  clear: both; /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+}
+
+#main {
+}
+
+/*
+ * Content
+ */
+#content,
+.no-sidebars #content {
+  float: left; /* LTR */
+  width: 960px;
+  margin-left: 0; /* LTR */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.sidebar-first #content {
+  width: 760px;
+  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-second #content {
+  width: 760px;
+  margin-left: 0; /* LTR */
+  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+  width: 560px;
+  margin-left: 200px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -760px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+#content .section {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Navigation
+ */
+#navigation {
+  float: left; /* LTR */
+  width: 100%;
+  margin-left: 0; /* LTR */
+  margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
+  height: 2.3em; /* The navigation can have any arbritrary height. We picked one
+                    that is the line-height plus 1em: 1.3 + 1 = 2.3
+                    Set this to the same value as the margin-top below. */
+}
+
+.with-navigation #content,
+.with-navigation .region-sidebar-first,
+.with-navigation .region-sidebar-second {
+  margin-top: 2.3em; /* Set this to the same value as the navigation height above. */
+}
+
+#navigation .section {
+}
+
+#navigation ul /* Primary and secondary links */ {
+  margin: 0;
+  padding: 0;
+  text-align: left; /* LTR */
+}
+
+#navigation li /* A simple method to get navigation links to appear in one line. */ {
+  float: left; /* LTR */
+  padding: 0 10px 0 0; /* LTR */
+}
+
+/*
+ * First sidebar
+ */
+.region-sidebar-first {
+  float: left; /* LTR */
+  width: 200px;
+  margin-left: 0; /* LTR */
+  margin-right: -200px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+  margin: 0 20px 0 0; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: left; /* LTR */
+  width: 200px;
+  margin-left: 760px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -960px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+}
+
+.region-sidebar-second .section {
+  margin: 0 0 0 20px; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+#footer {
+}
+
+#footer .section {
+}
+
+/*
+ * Closure
+ */
+.region-page-closure /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer,
+.region-page-closure {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+#navigation {
+  overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+#page-wrapper {
+  overflow-y: hidden;
+}
+*/
+
+/*Home title*/
+.front #content .title{
+display:none;
+
+}
+/*end Home title*/
+
+/*Header - primary links */
+#block-block-2 .primary-links{
+ font-weight:bold;
+ float:right;
+ margin-top: 60px;
+}
+
+#block-block-2 .primary-links li{
+ background-color:#95c01b;
+ padding:6px 9px;
+}
+
+#block-block-2 .primary-links li:hover,
+#block-block-2 .primary-links li.active{
+ background-color:#00864a;
+}
+
+#block-block-2 .primary-links li a,
+#block-block-2 .primary-links li a:visited{
+ color:#fff;
+ text-decoration:none;
+}
+/*end Header - primary links */
+
+/*Header logo*/
+#header-logo{
+ margin-left:-25px;
+}
+/*end Header logo*/
+
+/*Home calendar*/
+#home-calendar{
+ width:620px;
+ float:left;
+ margin-right:20px;
+}
+/*end Home calendar*/
+
+#home-main-info-1,
+#home-main-info-2{
+ width:316px;
+ float:left;
+ height:290px;
+ margin-bottom:20px;
+}
+
+/*right block*/
+#home-main-info-1 #right-block-title-1,
+#home-main-info-2 #right-block-title-2{
+ color:#FFF;
+ font-weight:bold;
+ height:66px;
+ padding:5px;
+}
+
+#home-main-info-1 #right-block-title-1{
+ background-color:#00864a;
+}
+
+#home-main-info-2 #right-block-title-2{
+ background-color:#ff8410;
+}
+
+a.more-info,
+a.more-info:link{
+ color:#fff !important;
+ font-weight:bold;
+ float:right;
+}
+/*end right block*/
+
+/*footer*/
+
+#block-block-1 .content .rtecenter a:link,
+#block-block-1 .content .rtecenter a:visited{
+ text-decoration:none;
+ color:#5E6062;
+}
+#footer{
+ margin-top:40px;
+} 
+/*end footer*/
+
+/* Admin Control Panel*/
+ 
+ #block-block-3 {
+ background-color: #95C01B;
+ color: #fff;
+ padding: 1px 10px;
+ border-radius: 5px;
+}
+
+.control-panel-links a {
+ color: #fff !important;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.control-panel-links a:hover {
+ text-decoration: underline;
+}
+
+ul.control-panel-links .first {
+ margin-left: 0;
+ padding-left: 0;
+}
+/*End Admin Control Panel*/
+/*link*/
+a:link,
+a:visited{
+ text-decoration:none;
+ color:#00864A;
+}
+a:hover{
+text-decoration:underline;
+}
+
+/*end link*/
+
+/*Blog*/
+
+
+.node-type-postblog .comment_add a:link,
+.node-type-postblog .comment_add a:visited,
+.node-type-postblog .node_read_more a:link,
+.node-type-postblog .node_read_more a:visited,
+.node-type-postblog .comment_comments a:link,
+.node-type-postblog .comment_comments a:visited{
+ font-weight:bold;
+}
+.node-type-postblog .comment_add a:hover,
+.node-type-postblog .node_read_more a:hover,
+.node-type-postblog .comment_comments a:hover{
+ color:#95c01b;
+}
+
+ul.inline li.comment_add,
+ul.inline li.comment_comments{
+ padding:0;
+}
+
+#comments h2.title{
+ color: #00864A;
+}
+.node-teaser {
+ border-bottom: 1px dashed #555555;
+ padding-bottom: 10px;
+ padding-top: 10px;
+} 
+
+.comment{
+ background-color: #b9e0a5;
+ border-color: #00864A;
+ border-style: solid;
+ border-width: 3px;
+ margin-bottom: 15px;
+ margin-top: 10px;
+padding: 5px 10px;
+ }
+/*end Blog*/
+/*Contact form*/
+.webform-client-form #edit-submitted-Name,
+.webform-client-form #edit-submitted-e-mail,
+.webform-client-form #edit-submitted-tel-nr,
+.webform-client-form #edit-submitted-frage{
+ border-color: #00864A;
+ border-style: solid;
+ border-width: 3px;
+}
+    
+ .webform-client-form .grippie{
+  height:0 !important;
+ }
+ 
+ .form-submit{
+   background-color:#95C01B;
+   color:#fff;
+   font-weight:bold;
+   border:0 none;
+}
+
+ .form-submit:hover{
+  background-color:#00864A;
+}
+
+#webform-component-Name .error,
+#webform-component-e-mail .error,
+#webform-component-frage .error{
+  border-color: #EE5555;
+}
+/*end Contact form*/

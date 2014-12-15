@@ -1,0 +1,642 @@
+/* Home title */
+/*
+.front #content .title {
+  display:none;
+}
+*/
+/*end Home title*/
+
+/*Header - primary links */
+
+#menu-principal {
+  float:right;
+}
+
+ul.primary-links{
+ font-weight:normal;
+ margin-top: 60px;
+ 
+}
+
+#block-block-2 .primary-links li {
+ background-color:#95c01b;
+ padding:6px 9px;
+ border-radius: 3px;
+}
+
+#block-block-2 .primary-links li:hover,
+#block-block-2 .primary-links li.active {
+ background-color:#00864a;
+}
+
+#block-block-2 .primary-links li a,
+#block-block-2 .primary-links li a:visited {
+ color:#fff;
+ text-decoration:none;
+}
+/*end Header - primary links */
+
+/*Header logo*/
+#header-logo{
+ float:left;
+}
+/*end Header logo*/
+
+/*Home calendar*/
+#home-calendar{
+ width:620px;
+ float:left;
+ margin-right:20px;
+}
+
+.calendar-calendar .links,
+.calendar-calendar td.week,
+.calendar-calendar th.week
+{
+ display:none;
+}
+
+.view-display-id-calendar_1 .calendar-calendar table{
+ border:1px solid #fff !important;
+}
+.calendar-calendar div.date-nav{
+border-bottom:0 !important;
+}
+
+.calendar-calendar .date-nav h3,
+.calendar-calendar .date-nav div.date-prev a,
+.calendar-calendar .date-nav div.date-next a,
+.calendar-calendar .month-view table thead tr th{
+ color:#fff !important;
+}
+
+.calendar-calendar div.date-nav,
+.calendar-calendar .month-view table thead tr th{
+ background-color:#00864a !important;
+}
+.calendar-calendar div.date-nav{
+ height:32px;
+ border:1px solid #fff;
+}
+.calendar-calendar .date-nav div.date-prev {
+ padding:5px 0 0 5px;
+}
+.calendar-calendar .date-nav div.date-next {
+ padding:5px 5px 0 0;
+}
+.calendar-calendar .date-nav .date-heading{
+padding-top:5px;
+}
+
+.calendar-calendar div.day{
+border:0 none !important;
+}
+.calendar-calendar td .inner div, .calendar-calendar td .inner div a{
+background:none;
+}
+.calendar-calendar .has-events .inner div.day a{
+color: #777777;
+font-weight:normal;
+ pointer-events: none;
+ cursor: default;
+}
+.calendar-calendar .today .inner div.day,
+.calendar-calendar .today .inner div.day a{
+color: #00864A !important;
+font-weight:bold;
+}
+
+.calendar-calendar .today{
+background-color:#b9e0a5 !important;
+}
+
+.calendar-calendar .month-view tbody tr td{
+ background-color:#d0f2bf;
+ border:1px solid #fff !important;
+}
+
+/*end Home calendar*/
+
+#home-main-info-1,
+#home-main-info-2{
+ width:316px;
+ float:left;
+ height:290px;
+ margin-bottom:10px;
+}
+
+#home-main-info-2 {
+ height:230px;
+}
+
+/*right block*/
+#right-block-title-1,
+#right-block-title-2 {
+ color:#FFF;
+ font-weight:bold;
+ padding:5px;
+ border-radius-bottom: 3px;
+ margin-top: -5px;
+}
+
+#right-block-title-1{
+ background-color:#00864a;
+}
+
+#right-block-title-2{
+ background-color:#ff8410;
+}
+
+a.more-info,
+a.more-info:link{
+ color:#fff !important;
+ font-weight:bold;
+ float:right;
+}
+/*end right block*/
+
+/*footer*/
+
+#block-block-1 .content .rtecenter a:link,
+#block-block-1 .content .rtecenter a:visited{
+  text-decoration:none;
+  color:#5E6062;
+}
+#footer{
+  margin-top:30px;
+} 
+/*end footer*/
+
+/* Admin Control Panel*/
+ #block-block-3 {
+ background-color: #95C01B;
+ color: #fff;
+ padding: 1px 10px;
+ border-radius: 5px;
+}
+
+.control-panel-links a {
+ color: #fff !important;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.control-panel-links a:hover {
+ text-decoration: underline;
+}
+
+ul.control-panel-links .first {
+ margin-left: 0;
+ padding-left: 0;
+}
+
+ul.control-panel-links li {
+  display: list-item;
+}
+
+#block-block-3 .control-panel-links li{
+  padding:0 0.8em 0 0;
+}
+/*End Admin Control Panel*/
+
+/*link*/
+a:link,
+a:visited{
+ text-decoration:none;
+ color:#00864A;
+ font-weight:bold;
+}
+a:hover{
+text-decoration:none;
+}
+
+#footer a:link,
+#footer a:visited{
+font-weight:normal;
+}
+/*end link*/
+
+/*Blog*/
+.node-type-postblog .comment_add a:link,
+.node-type-postblog .comment_add a:visited,
+.node-type-postblog .node_read_more a:link,
+.node-type-postblog .node_read_more a:visited,
+.node-type-postblog .comment_comments a:link,
+.node-type-postblog .comment_comments a:visited,
+.node-type-postblog .comment_reply a:link,
+.node-type-postblog .comment_reply a:visited,
+.node-type-postblog .comment_delete a:link,
+.node-type-postblog .comment_delete a:visited,
+.node-type-postblog .comment_edit a:link,
+.node-type-postblog .comment_edit a:visited{
+ font-weight:bold;
+}
+
+.node-type-postblog .comment_add a:hover,
+.node-type-postblog .node_read_more a:hover,
+.node-type-postblog .comment_comments a:hover,
+.node-type-postblog .comment_reply a:hover,
+.node-type-postblog .comment_delete a:hover,
+.node-type-postblog .comment_edit a:hover{
+ color:#95c01b;
+}
+
+ul.inline li.comment_add,
+ul.inline li.comment_comments{
+ padding:0;
+}
+
+#comments h3.title a{
+ color: #00864A;
+}
+
+.node-teaser {
+	border-bottom: 2px solid #95c01b;
+	padding-bottom: 20px;
+	padding-top: 30px;
+} 
+
+.comment{
+ background-color: #d0f2bf;
+ border-color: #00864A;
+ border-style: solid;
+ border-width: 3px;
+ margin-bottom: 15px;
+ margin-top: 10px;
+padding: 5px 10px;
+ }
+ 
+.terms-inline .taxonomy_term_1 a,
+.terms-inline .taxonomy_term_2 a,
+.terms-inline .taxonomy_term_3 a{
+ pointer-events: none;
+ cursor: default;
+}
+
+div.terms-inline li {
+  background-color: #95c01b;
+  padding: 4px 7px;
+  border-radius: 3px;
+} 
+
+div.terms-inline li a {
+  color: #fff;
+} 
+
+
+/*end Blog*/
+
+/*Contact form*/
+#webform-client-form-8 #edit-submitted-Name,
+#webform-client-form-8 #edit-submitted-e-mail,
+#webform-client-form-8 #edit-submitted-tel-nr,
+#webform-client-form-8 #edit-submitted-Nachricht{
+ width:400px;
+}
+
+.webform-client-form #edit-submitted-Name,
+.webform-client-form #edit-submitted-e-mail,
+.webform-client-form #edit-submitted-tel-nr,
+.webform-client-form #edit-submitted-Nachricht,
+#webform-client-form-174 .webform-component input,
+#webform-client-form-173 .webform-component input,
+#webform-client-form-174 .webform-component textarea,
+#webform-client-form-173 .webform-component textarea
+{
+ border-color: #00864A;
+ border-style: solid;
+ border-width: 3px;
+}
+#webform-client-form-173 #edit-submitted-krankheit,
+#webform-client-form-173 #edit-submitted-operation,
+#webform-client-form-173 #edit-submitted-medizinischer-behandlung,
+#webform-client-form-173 #edit-submitted-verstaucht,
+#webform-client-form-173 #edit-submitted-medikamente,
+#webform-client-form-173 #edit-submitted-schleudertrauma,
+#webform-client-form-173 #edit-submitted-sport,
+#webform-client-form-173 #edit-submitted-stress,
+#webform-client-form-174 #edit-submitted-medical-conditions,
+#webform-client-form-174 #edit-submitted-undergone-surgery,
+#webform-client-form-174 #edit-submitted-medical-treatment,
+#webform-client-form-174 #edit-submitted-bad-sprains,
+#webform-client-form-174 #edit-submitted-pain-killers,
+#webform-client-form-174 #edit-submitted-whiplash,
+#webform-client-form-174 #edit-submitted-sports,
+#webform-client-form-174 #edit-submitted-stress-disorder{
+width:95%
+}
+
+#webform-client-form-173 #webform-component-krankheit,
+#webform-client-form-173 #webform-component-operation,
+#webform-client-form-173 #webform-component-medizinischer-behandlung,
+#webform-client-form-173 #webform-component-verstaucht,
+#webform-client-form-173 #webform-component-medikamente,
+#webform-client-form-173 #webform-component-schleudertrauma,
+#webform-client-form-173 #webform-component-sport,
+#webform-client-form-173 #webform-component-stress,
+#webform-client-form-174 #webform-component-medical-conditions,
+#webform-client-form-174 #webform-component-undergone-surgery,
+#webform-client-form-174 #webform-component-medical-treatment,
+#webform-client-form-174 #webform-component-bad-sprains,
+#webform-client-form-174 #webform-component-pain-killers,
+#webform-client-form-174 #webform-component-whiplash,
+#webform-client-form-174 #webform-component-sports,
+#webform-client-form-174 #webform-component-stress-disorder{
+margin-bottom:40px;
+}
+
+.webform-client-form .grippie{
+  height:0 !important;
+ }
+ 
+ .form-submit{
+ background-color:#95C01B;
+ color:#fff;
+ font-weight:bold;
+ border:0 none;
+}
+
+ .form-submit:hover,
+ #node-8 .form-submit:hover{
+  background-color:#00864A;
+}
+
+#webform-client-form-8 .form-submit {
+    font-size: 22px;
+    font-weight: bold;
+    width:404px;
+}
+
+#webform-client-form-173 .form-submit,
+#webform-client-form-174 .form-submit{
+  font-size: 22px;
+  font-weight: bold;
+  width:95%;
+
+
+}
+
+#webform-component-Name .error,
+#webform-component-e-mail .error,
+#webform-component-Nachricht .error{
+  border-color: #EE5555;
+}
+
+#contact_info{
+float:right;
+width:340px;
+margin-right:145px;
+}
+#contact_info p{
+ padding-left:25px;
+}
+
+/* end Contact form */
+
+/* Control Panel */
+
+.view-id-post_blog_list .views-table,
+.view-id-events_list .views-table,
+.view-id-slider_image_list .views-table,
+.view-id-highlight_list .views-table{
+  width:100%;
+}
+.view-id-post_blog_list tr .views-field-title{
+  width:70%;
+}
+
+.view-id-slider_image_list tr .views-field-title{
+  width:62%;
+}
+
+.view-id-events_list .views-table .views-field-title{
+  width:63%;
+}
+.view-id-highlight_list .views-table .views-field-title{
+  width:73%;
+}
+
+
+a.cpanel-logout:link,
+a.cpanel-logout:visited{
+ color:#fff;
+}
+a.cpanel-logout:hover{
+ text-decoration:underline;
+}
+.view-id-slider_image_list .views-field-delete-node,
+.view-id-events_list .views-field-delete-node,
+.view-id-post_blog_list .views-field-delete-node,
+.view-id-highlight_list .views-field-delete-node{
+ width:60px;
+}
+
+.view-id-slider_image_list .views-field-edit-node,
+.view-id-events_list .views-field-edit-node,
+.view-id-post_blog_list .views-field-edit-node,
+.view-id-highlight_list .views-field-edit-node{
+ width:80px;
+}
+
+/*end Control Panel*/
+
+/*block events bottom content*/
+#block-views-Event-block_1 .views-row,
+#block-views-Event-block_2 .views-row,
+#block-views-Event-block_3 .views-row{
+  background-color: #D0F2BF;
+  border-color: #00864A;
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+#block-views-Event-block_1 .views-row,
+#block-views-Event-block_2 .views-row,
+#block-views-Event-block_3 .views-row{
+ background-color:#FFFFCC;
+}
+#block-views-Event-block_1 .views-row{
+ border-color:#B35C0B;
+}
+#block-views-Event-block_2 .views-row{
+ border-color:#FF8410;
+}
+#block-views-Event-block_3 .views-row{
+ border-color:#FFFB0F;
+}
+#block-views-Event-block_1 .views-row a,
+#block-views-Event-block_2 .views-row a,
+#block-views-Event-block_3 .views-row a{
+color:#000;
+}
+
+ /* End block events bottom content */
+
+/* Header Facebook & Search block */
+#edit-search-block-form-1 {
+  border-color:#95C01B;
+  border-style: solid;
+  margin-right:1px;
+}
+
+#search-block-form #edit-submit {
+  padding:2px 3px;
+}
+
+.fb-like, 
+.linkedin-icon img {
+ padding-right: 5px;
+  padding-top: 3px;
+}
+
+#header-search-fb {
+  float:right;
+
+}
+
+#search-block-form {
+  float: right;
+}
+
+a.linkedin-icon, .fb-like {
+  float:right;
+}
+
+form#search-block-form {
+  margin-top: 2px;
+}
+/* End Header Facebook & Search block */
+
+/* Events view */
+.node-type-event .calendar_link,
+.node-type-event .terms-inline .taxonomy_term_1,
+.node-type-event .terms-inline .taxonomy_term_2,
+.node-type-event .terms-inline .taxonomy_term_3{
+  display:none;
+}
+/* End events view */
+
+/* Event template */
+.event-info-box {
+  float: right;
+  border:3px solid #00864A;
+  padding:5px 10px; 
+  background-color:#D0F2BF;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/* End Event template */
+
+/* Pop Up Event */
+#calpopup-body .event-info-box{
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+#calpopup-body .content,
+#calpopup-body .node_read_more,
+#calpopup-body #nodelink{
+  display: none;
+}
+
+#calpopup-body #popup-close {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+#calpopup-body h2 {
+  font-size: 20px;
+}
+div#calpopup-body {
+  overflow: hidden;
+}
+/* End Pop Up Event */
+
+/* Highlight */
+
+#home-main-info-1 .more-info {
+  padding: 10px;
+}
+
+#block-block-5 img {
+  width: 300px;
+  border-radius-top: 3px;
+}
+/* End Highlight */
+
+.curso-workshop-pilates {
+  background-color:#FFFFCC;
+  padding: 10px;
+  border: 3px solid #00864A;
+}
+
+.curso-pilates-title{
+  color: #00864A;
+}
+
+h2.title a {
+	text-decoration:none;
+	color:#000;
+	font-weight:normal;	
+}
+
+h2.title a:hover {
+	color:#00864a;	
+}
+
+h2.title {
+  margin-bottom: 5px;
+}
+
+.region-sidebar-second {
+	width: 300px;
+	margin-left: 660px;
+    margin-top: 30px;
+}
+
+.sidebar-second #content {
+	width: 630px;
+	margin-right: -630px;
+}
+
+.region-sidebar-second .section {
+  margin: 0px;
+}
+
+ul.pager {
+  background-color: #E0F5A7;
+  padding: 7px;
+  margin-top:5px;
+}
+
+ul.pager li,
+ul.pager li a { color: #777; }
+
+.img-post-blog {
+  margin: 10px 0;
+  border-radius: 3px;
+} 
+
+.img-post-blog img {
+  border-radius: 3px;
+}
+
+div.terms-inline {
+  float: right;
+}
+
+div.terms-inline a {
+  font-weight: initial;
+}
+
+#block-block-2 .primary-links li a{
+  font-weight: initial;
+}
+
+h1.title {
+  font-weight: initial;
+  margin-bottom: 10px;
+}
+
